@@ -1,11 +1,9 @@
 import os
 import time
-for i in range(100000000000):
+a='n'
+while (a !='Y' and a!='y'):
     a= input("Tắt máy hoặc bị nguyền! (y/n): ")
-    if (a =='Y' or a=='y'):
-        print('tắt đi!')
-        os.system('shutdown -s')
-        break
-    else:
-        print('Lời nguyền sẽ trở lại trong 30s tới!')
-        time.sleep(30)
+    print('lời nguyền sẽ trở lại trong 30s nữa')
+    time.sleep(30)
+print('Tắt máy!')
+os.system('shutdown -s')
